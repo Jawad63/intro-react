@@ -50,11 +50,11 @@ function App() {
 
   return (
     <>
-      <TodoList  todos = {todos} toggleTodo = {toggleTodo} />
+      <TodoList todos = {todos} toggleTodo = {toggleTodo} />
       <input className="input-field" ref={todoNameRef} type="text" />
-      <button className="buttons btn" onClick={handleAddTodo}>Add Todo</button>
-      <button className="buttons" onClick={handleClearTodos}>Clear Complete</button>
-      <div>{todos.filter(todo => !todo.complete).length} left to do</div>
+      <button className="buttons btn btn-primary" onClick={handleAddTodo}>Add Todo</button>
+      <button className="buttons btn btn-danger" onClick={handleClearTodos}>Clear Complete</button>
+      <div className="info-text">{todos.filter(todo => !todo.complete).length} left to do</div>
     </>
   )
 }

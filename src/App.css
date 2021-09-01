@@ -37,12 +37,18 @@
 .buttons {
   margin: 0.5rem;
   padding: 5px;
-  color: red;
+  color: white;
   font-size: 0.8rem;
   font-weight: 600;
 }
 
+.check-text {
+  margin: 0.7rem;
+}
 
+.info-text {
+  margin: 0.7rem;
+}
 
 @keyframes App-logo-spin {
   from {
